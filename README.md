@@ -69,17 +69,16 @@ Metrics are computed on the same held-out test split. AUC is macro-averaged one-
    %run train_models.py
    ```
    Check that five `.joblib` model files are created and metric rows print in the output.
-6. If the pre-trained models supplied in `model/` are present, you can skip retraining for app evaluation. For proof of assignment execution, run the training script in BITS Virtual Lab and take your own screenshot showing the code cell and successful output. **Do not use a fabricated screenshot.**
+6. If the pre-trained models supplied in `model/` are present, you can skip retraining for app evaluation.
 7. To launch Streamlit, use a terminal in the project folder:
    ```bash
    streamlit run app.py --server.port 8501
    ```
-   If the virtual lab does not expose port 8501, use the lab's supported app/port-forwarding instructions. Some virtual lab configurations may allow notebook execution but not public web serving; if so, run training/evaluation in the lab and deploy the app from GitHub/Streamlit Community Cloud separately.
 
 ## GitHub setup
 1. Create a new, empty GitHub repository under your account.
 2. Upload the project files and the entire `model/` directory. Keep `app.py`, `requirements.txt`, and `README.md` at repository root.
-3. Commit your own changes with meaningful messages; review and understand the code rather than submitting it blindly.
+3. Commit your own changes with meaningful messages;
 4. Replace the placeholder GitHub URL above with your actual repository URL.
 5. Verify that `test_data.csv` and all five model files are present in the repository.
 
@@ -89,7 +88,7 @@ Metrics are computed on the same held-out test split. AUC is macro-averaged one-
 3. Choose **Create app / New app**, select your repository and branch, and set the main file path to `app.py`.
 4. Click **Deploy** and wait for build logs to finish. If deployment fails, open the logs and compare missing packages with `requirements.txt`.
 5. Open the public app URL. Upload `test_data.csv`, select each model in the dropdown, and confirm metrics, confusion matrix, classification report, and predictions appear.
-6. Copy the real GitHub URL and real Streamlit URL into the final submission PDF. These URLs cannot be generated until you deploy under your own account.
+6. Copy the real GitHub URL and real Streamlit URL into the final submission PDF.
 7. GitHub URL - https://github.com/2026AJ05221/bits-ml-assignment-2-obesity-classification
 8. Streamlit URL - https://bits-ml-assignment-2-obesity-classification.streamlit.app/
 
@@ -102,7 +101,7 @@ Metrics are computed on the same held-out test split. AUC is macro-averaged one-
 - The uploaded CSV must be labelled; the app evaluates it and never retrains on it.
 
 ## Final submission PDF checklist (follow assignment order)
-1. GitHub repository link (replace placeholder with your real URL).
-2. Live Streamlit app link (replace placeholder with real deployed URL).
-3. Screenshot from BITS Virtual Lab (capture it yourself after running the script).
+1. GitHub repository link
+2. Live Streamlit app link
+3. Screenshot from BITS Virtual Lab
 4. Include this README content in the submitted PDF.
