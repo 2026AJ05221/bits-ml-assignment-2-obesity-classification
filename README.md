@@ -16,7 +16,7 @@ Build and compare five supervised classification models to predict the obesity-l
 - The supplied test file is the held-out 20% split and includes the target label, as required by the assignment for evaluation.
 
 ## c. GitHub Repository Link
-**Add your GitHub repository URL here after you create and push this project:** `PASTE_YOUR_GITHUB_REPOSITORY_URL_HERE`
+**Add your GitHub repository URL here after you create and push this project:** "https://github.com/2026AJ05221/bits-ml-assignment-2-obesity-classification"
 
 ## d. Models used and evaluation metrics
 Metrics are computed on the same held-out test split. AUC is macro-averaged one-vs-rest (OVR) multiclass ROC AUC. Precision, recall, and F1 are weighted averages. Values are specific to this split and random seed; results can differ if the split or hyperparameters change.
