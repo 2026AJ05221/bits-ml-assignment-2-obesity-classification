@@ -90,6 +90,8 @@ Metrics are computed on the same held-out test split. AUC is macro-averaged one-
 4. Click **Deploy** and wait for build logs to finish. If deployment fails, open the logs and compare missing packages with `requirements.txt`.
 5. Open the public app URL. Upload `test_data.csv`, select each model in the dropdown, and confirm metrics, confusion matrix, classification report, and predictions appear.
 6. Copy the real GitHub URL and real Streamlit URL into the final submission PDF. These URLs cannot be generated until you deploy under your own account.
+7. GitHub URL - https://github.com/2026AJ05221/bits-ml-assignment-2-obesity-classification
+8. Streamlit URL - https://bits-ml-assignment-2-obesity-classification.streamlit.app/
 
 ## Streamlit app behaviour
 - CSV upload and validation for all required feature and target columns.
