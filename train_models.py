@@ -15,10 +15,10 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path.cwd
 DATA_FILE = ROOT / "ObesityDataSet_raw_and_data_sinthetic.csv"
 MODEL_DIR = ROOT / "model"
-MODEL_DIR.mkdir(exist_ok=True)
+MODEL_DIR.mkdir(parents=True, exist_ok=True)
 TARGET = "NObeyesdad"
 df = pd.read_csv(DATA_FILE)
 X, y = df.drop(columns=[TARGET]), df[TARGET]
